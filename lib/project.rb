@@ -1,17 +1,16 @@
 class Project
-  @@backers = []
-  attr_accessor :title, :name
 
   def initialize(title)
     @title = title
+    @backers = []
   end
 
   def add_backer(name)
-    @@backers << name
+    @backers << name
   end
 
   def backers
-    @@backers
+    @backers
   end
 
 end
