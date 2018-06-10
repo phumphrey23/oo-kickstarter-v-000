@@ -10,6 +10,8 @@ class Backer
     @backed_projects << title
   end
 
-
+  def backed_projects
+    @@backed_projects
+  end
 
 end
