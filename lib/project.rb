@@ -5,6 +5,10 @@ class Project
     @backers = []
   end
 
+  def title
+    @title
+  end
+
   def add_backer(name)
     @backers << name
     Backer.backed_projects << self
